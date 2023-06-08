@@ -1,0 +1,33 @@
+input {
+    display: block;
+    padding: 0.2rem;
+    font-size: 14pt;
+    width: 70ch;
+    border: none;
+    border-bottom: 1px solid #333;
+    background-color: inherit;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #333;
+}
+
+.message {
+    position: fixed;
+}
+
+.message.leaving {
+    animation: MoveUp 5s linear;
+}
+
+@keyframes MoveUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30rem);
+    }
+}
